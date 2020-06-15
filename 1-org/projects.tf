@@ -70,7 +70,7 @@ module "org_monitoring_nonprod" {
   activate_apis               = ["logging.googleapis.com", "monitoring.googleapis.com"]
 
   labels = {
-    environment      = "prod"
+    environment      = "nonprod"
     application_name = "org-monitoring-nonprod"
   }
 }
@@ -114,7 +114,7 @@ module "org_shared_vpc_nonprod" {
   ]
 
   labels = {
-    environment      = "prod"
+    environment      = "nonprod"
     application_name = "org-shared-vpc-nonprod"
   }
 }
